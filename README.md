@@ -62,5 +62,9 @@ code
 ```
 pyrcc5 -o pic.py pic.qrc
 ```
+註4: 若有修改 train.ui 檔案，請在工作目錄下開啟 CMD 並執行以下程式碼: (其他ui檔案修改依此類推)
+```
+pyuic5 train.ui -o train_ui.py
+```
 
 
