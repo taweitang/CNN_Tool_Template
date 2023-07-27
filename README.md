@@ -66,5 +66,6 @@ pyrcc5 -o pic.py pic.qrc
 ```
 pyuic5 train.ui -o train_ui.py
 ```
+輸出完 train_ui.py 之後，記得將該檔案最後一列之 pic_rc 修改為 pic
 
 
