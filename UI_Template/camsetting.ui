@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>728</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CNN Template</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(:/ui_img/background.jpg);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/ui_img/cam_setting.png);</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget_2" native="true">
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/ui_img/trans.png);</string>
+         </property>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>80</y>
+            <width>81</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>Device</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>150</y>
+            <width>91</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>Exposure</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>200</y>
+            <width>91</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>Focus</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>272</y>
+            <width>111</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>Crop Width</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>322</y>
+            <width>191</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>Crop Height</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>395</y>
+            <width>81</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>Rotation</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>445</y>
+            <width>51</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>Flip</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox_model">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>90</y>
+            <width>491</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 0);
+border: 1px solid rgb(68,114,196);
+color: rgb(255,255,255);</string>
+          </property>
+          <property name="frame">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>Device0</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QTextEdit" name="textEdit_Exposure">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>157</y>
+            <width>91</width>
+            <height>40</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255,255,255);</string>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Dubai'; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEdit_Focus">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>206</y>
+            <width>91</width>
+            <height>40</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255,255,255);</string>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Dubai'; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEdit_Crop_W">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>277</y>
+            <width>91</width>
+            <height>40</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255,255,255);</string>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Dubai'; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEdit_Crop_H">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>329</y>
+            <width>91</width>
+            <height>40</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255,255,255);</string>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Dubai'; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="horizontalSlider_Exposure">
+          <property name="geometry">
+           <rect>
+            <x>250</x>
+            <y>165</y>
+            <width>331</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>13</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QSlider" name="horizontalSlider_Focus">
+          <property name="geometry">
+           <rect>
+            <x>250</x>
+            <y>215</y>
+            <width>331</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QSlider" name="horizontalSlider_Crop_W">
+          <property name="geometry">
+           <rect>
+            <x>250</x>
+            <y>285</y>
+            <width>331</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QSlider" name="horizontalSlider_Crop_H">
+          <property name="geometry">
+           <rect>
+            <x>250</x>
+            <y>337</y>
+            <width>331</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="checkBox_Auto_Exposure">
+          <property name="geometry">
+           <rect>
+            <x>600</x>
+            <y>160</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>Auto</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="checkBox_Auto_Focus">
+          <property name="geometry">
+           <rect>
+            <x>600</x>
+            <y>210</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>Auto</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="checkBox_11Crop">
+          <property name="geometry">
+           <rect>
+            <x>600</x>
+            <y>280</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>1:1 Crop</string>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="radioButton_90">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>410</y>
+            <width>81</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>90°</string>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="radioButton_0">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>410</y>
+            <width>81</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>0°</string>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="radioButton_180">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>410</y>
+            <width>81</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>180°</string>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="radioButton_270">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>410</y>
+            <width>81</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>270°</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="checkBox_Horizontal">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>455</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>Horizontal</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="checkBox_Vertical">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>455</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(189,215,238);</string>
+          </property>
+          <property name="text">
+           <string>Vertical</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_Run">
+          <property name="geometry">
+           <rect>
+            <x>460</x>
+            <y>510</y>
+            <width>111</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>18</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
+
+QPushButton
+{
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(189,215,238);
+}
+
+QPushButton:hover
+{
+	background-color: rgba(189,215,238, 150);
+	color: rgb(189,215,238);
+}
+
+</string>
+          </property>
+          <property name="text">
+           <string>Run</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_Stop">
+          <property name="geometry">
+           <rect>
+            <x>580</x>
+            <y>510</y>
+            <width>111</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Dubai</family>
+            <pointsize>18</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
+
+QPushButton
+{
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(189,215,238);
+}
+
+QPushButton:hover
+{
+	background-color: rgba(189,215,238, 150);
+	color: rgb(189,215,238);
+}
+
+</string>
+          </property>
+          <property name="text">
+           <string>Stop</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="pic.qrc"/>
+ </resources>
+ <connections/>
+</ui>

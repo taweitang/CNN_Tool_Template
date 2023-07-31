@@ -1,0 +1,45 @@
+<RCC>
+  <qresource prefix="/">
+    <file>./ui_img/trans.png</file>
+    <file>./ui_img/background.jpg</file>
+    <file>./ui_img/menu.png</file>
+    <file>./ui_img/menu_detect.png</file>
+    <file>./ui_img/menu_detect_2.png</file>
+    <file>./ui_img/menu_train.png</file>
+    <file>./ui_img/menu_train_2.png</file>
+    <file>./ui_img/menu_verify.png</file>
+    <file>./ui_img/menu_verify_2.png</file>
+    <file>./ui_img/train_ADModel.png</file>
+<file>./ui_img/train_detail.png</file>
+<file>./ui_img/train_info.png</file>
+<file>./ui_img/train_tool.png</file>
+<file>./ui_img/train_vis.png</file>
+<file>./ui_img/train_list.png</file>
+<file>./ui_img/stop.png</file>
+<file>./ui_img/open.png</file>
+<file>./ui_img/run.png</file>
+<file>./ui_img/stop2.png</file>
+<file>./ui_img/open2.png</file>
+<file>./ui_img/run2.png</file>
+<file>./ui_img/progress.png</file>
+<file>./ui_img/verify_setting.png</file>
+<file>./ui_img/verify_result.png</file>
+<file>./ui_img/verify_categories.png</file>
+
+<file>./ui_img/detect_info.png</file>
+<file>./ui_img/detect_mode.png</file>
+<file>./ui_img/detect_result.png</file>
+<file>./ui_img/detect_setting.png</file>
+<file>./ui_img/detect_vis.png</file>
+<file>./ui_img/cam_setting.png</file>
+
+<file>./ui_img/stop_cam.png</file>
+<file>./ui_img/stop_AI.png</file>
+<file>./ui_img/run_cam.png</file>
+<file>./ui_img/run_AI.png</file>
+
+
+
+
+  </qresource>
+</RCC>
